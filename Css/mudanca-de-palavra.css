@@ -1,0 +1,38 @@
+        body{
+            width: 1000px;
+            height: 600px;
+            background-color:#302860;
+        }
+        .titulo{
+            text-align: center;
+            color: aliceblue;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+            font-size: 300%;
+            line-height: 1.1;
+            position: absolute;
+            top: 5px;
+            left: 450px;
+            z-index: 1001;
+        }
+        .estilosenha{
+            position: absolute;
+            top:180px;
+            left: 530px;
+            align-items: center;
+            border: 4px double #ffffff;
+            border-radius: 5px;
+            box-shadow: 3.5px 3.5px rgb(0, 0, 0);
+            font-family: "Bebas Neue", sans-serif;
+        }
+         .estilosenha2{
+            position: absolute;
+            top:220px;
+            left: 530px;
+            align-items: center;
+            border: 4px double #ffffff;
+            border-radius: 5px;
+            box-shadow: 3.5px 3.5px rgb(0, 0, 0);
+            font-family: "Bebas Neue", sans-serif;
+        }

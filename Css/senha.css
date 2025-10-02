@@ -1,0 +1,16 @@
+        body{
+            width: 1000px;
+            height: 600px;
+            background-color:#302860;
+        }
+        .estilosenha{
+            position: absolute;
+            top:270px;
+            left: 530px;
+            align-items: center;
+            border: 4px double #ffffff;
+            border-radius: 5px;
+            box-shadow: 3.5px 3.5px rgb(0, 0, 0);
+            font-family: "Bebas Neue", sans-serif;
+        }
+         

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Css/mudanca-de-palavra.css">
+    <link rel="shortcut icon" href="imgs/favicon caneta e papel/android-chrome-512x512.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterações</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="titulo">Adicione uma nova palavra</h1>
+
+<div class="estilosenha">
+    <input type="text" id="tema" placeholder="Digite o tema/titulo" required>
+    <input type="submit" onclick="tema()">
+</div>
+
+<div class="estilosenha2">
+    <div id="novo"></div>
+    <div id="ok"></div>
+</div>
+
+    <script>
+         function tema(){
+       var tema = document.getElementById('tema').value;{
+        let Local = document.createElement('input');
+            Local.type = "text";
+            Local.placeholder = "Digite a palavra";
+
+        let container = document.getElementById('novo');
+            if (novo) {
+                container.appendChild(Local);
+            }
+            
+        let botao = document.createElement('input');
+            botao.type = "submit";
+
+        let ok = document.getElementById('ok');
+            if (ok) {
+                container.appendChild(botao);
+            }
+
+        }
+    }
+
+
+
+        
+        
+ 
+    </script>
+    
+</body>
+</html>

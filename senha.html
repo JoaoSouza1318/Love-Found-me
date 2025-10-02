@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Css/senha.css">
+    <link rel="shortcut icon" href="imgs/favicon cadeado/android-chrome-512x512.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senha</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="estilosenha">
+<input type="password" id="senha" placeholder="Digite a senha" required>
+<input type="submit" onclick="validacao()">
+    </div>
+
+    <script>
+        function validacao(){
+        var senha = document.getElementById('senha').value;
+    if (senha == "LFM24"){
+            location.href = "mudanca-de-palavra.html";
+    }
+    else{
+         alert("Preencha este campo corretamente");
+    }
+    }
+    </script>
+    
+</body>
+</html>
