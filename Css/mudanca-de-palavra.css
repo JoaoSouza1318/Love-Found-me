@@ -36,3 +36,23 @@
             box-shadow: 3.5px 3.5px rgb(0, 0, 0);
             font-family: "Bebas Neue", sans-serif;
         }
+        .visunovo{
+            color: aliceblue;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+            font-size: 100%;
+            line-height: 1.1;
+            position: absolute;
+            top: 80px;
+            left: 50px;
+            z-index: 1001;
+        }
+        .salvar{
+            border: 2px double #ffffff;
+            border-radius: 5px;
+            box-shadow: 3.5px 3.5px rgb(0, 0, 0);
+            position: absolute;
+            top:270px;
+            left: 600px;
+        }

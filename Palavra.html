@@ -6,6 +6,7 @@
     <title>Palavra</title>
     <link rel="stylesheet" href="Css/palavra.css">
     <link rel="shortcut icon" href="imgs/favicon biblia/android-chrome-512x512.png" type="image/x-icon">
+    <script src="script-de-impressao.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +17,10 @@
 <body>
     <h1 class="titulo">Palavra da semana</h1>
 
+
     <div class="ctexto">
-        <h2 class="conteudo">Título/tema </h2>
+        <div class="conteudoT" id="tema"></div>
+        <div class="conteudoC" id="conteudo"></div>
     </div>
 
       <nav class="menu">
@@ -90,6 +93,11 @@
 </div>
 </button>
 </a>
+<script>
+    let imprimir1 = document.getElementById('tema').innerHTML = localStorage.getItem('tema');
+    let imprimir2 = document.getElementById('conteudo').innerHTML = localStorage.getItem('conteudo');
+
+</script>
 
 </body>
 </html>
