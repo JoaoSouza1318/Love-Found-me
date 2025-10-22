@@ -19,8 +19,7 @@
 
 
     <div class="ctexto">
-        <div class="conteudoT" id="tema"></div>
-        <div class="conteudoC" id="conteudo"></div>
+        <div id="impressao"></div>
     </div>
 
       <nav class="menu">
@@ -93,9 +92,38 @@
 </div>
 </button>
 </a>
-<script>
-    let imprimir1 = document.getElementById('tema').innerHTML = localStorage.getItem('tema');
-    let imprimir2 = document.getElementById('conteudo').innerHTML = localStorage.getItem('conteudo');
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+    import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyA06N8YExeX7Vt7y2yaIPV3DgOi62hhBEQ",
+  authDomain: "love-found-me.firebaseapp.com",
+  projectId: "love-found-me",
+  storageBucket: "love-found-me.firebasestorage.app",
+  messagingSenderId: "196735722095",
+  appId: "1:196735722095:web:4897eb31a71ca3b609a39a",
+  measurementId: "G-HQEWTMDDMP"
+};
+
+   const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+       async function carregarUltimo() {
+      let impressao = document.getElementById('impressao');
+      let ref = doc(db, "pregacoes", "ultima_palavra");
+      let imprimeaimano = await getDoc(ref);
+       }
+
+       if (imprimeaimano.exists()) {
+        let data = imprimeaimano.data();
+        impressao.innerHTML = `<h3>${data.tema}</h3><p>${data.conteudo}</p><small>Atualizado em: ${new Date(data.atualizadoEm).toLocaleString()}</small>`;
+      } else {
+        impressao.innerHTML = "<p>Nenhuma palavra salva ainda.</p>";
+      }
+
+
+       carregarUltimo();
 
 </script>
 
