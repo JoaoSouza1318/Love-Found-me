@@ -48,4 +48,4 @@
         }
 };
 
-salvar.addEventListener('click', escrever); 
+salvar.addEventListener('click', escrever, alert("Salvo")); 
